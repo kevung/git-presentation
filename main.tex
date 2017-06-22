@@ -103,11 +103,17 @@
 \subsection{Configuration initiale}
 \begin{frame}
         \frametitle{Configuration initiale}
-        \begin{itemize}
-                \item editeur
-                \item nom prenom
-                \item email
-        \end{itemize}
+        \begin{block}{Identit\'e}
+                git config --global user.name "Augustin Fresnel"
+        \end{block}
+        
+        \begin{block}{Email}
+                git config --global user.email "augustin.fresnel@fresnel.fr"
+        \end{block}
+
+        \begin{block}{Editeur}
+                git config --global core.editor emacs
+        \end{block}
 \end{frame}
 
 \subsection{Les alias}
