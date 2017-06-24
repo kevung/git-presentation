@@ -284,12 +284,27 @@
 \subsection{Les alias}
 \begin{frame}
         \frametitle{Les alias}
-        \begin{itemize}
-                \item status
-                \item commit
-                \item checkout
-                \item branch
-        \end{itemize}
+        \vspace{-7mm}
+        \begin{columns}
+                \column{0.6\linewidth}
+
+                \begin{block}{checkout -> co}
+                        git config --global alias.co checkout
+                \end{block}
+
+                \begin{block}{branch -> br}
+                        git config --global alias.br branch
+                \end{block}
+
+                \begin{block}{status -> st}
+                        git config --global alias.st status
+                \end{block}
+
+                \begin{block}{commit -> ci}
+                        git config --global alias.ci commit
+                \end{block}
+
+        \end{columns}
 \end{frame}
 
 %-----------------------------------------------
