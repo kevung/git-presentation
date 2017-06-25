@@ -270,9 +270,27 @@
 \section{Travailler \`a plusieurs (simultan\'ement) }
 
 \subsection{Principe}
+
 \begin{frame}
-        \frametitle{Principe}
-        Principe d'un d\'ep\^ot
+        \frametitle{D\'ep\^ot centralis\'e}
+        \centering
+        \includegraphics[width=\linewidth,height=0.8\textheight,keepaspectratio]{./img/centralized_workflow}
+        \begin{block}{Cr\'eer un d\'ep\^ot vierge}
+                git init --bare mon-depot.git
+        \end{block}
+\end{frame}
+
+\begin{frame}
+        \frametitle{Trois commandes}
+        \begin{block}{Ajouter l'adresse d'un d\'ep\^ot distant}
+                git remote add mon-depot adresse-de-mon-depot
+        \end{block}
+        \begin{block}{Pousser sur un d\'ep\^ot distant}
+                git push mon-depot branche-sur-mon-depot
+        \end{block}
+        \begin{block}{Tirer sur un d\'ep\^ot distant}
+                git pull mon-depot branche-sur-mon-depot
+        \end{block}
 \end{frame}
 
 %-----------------------------------------------
