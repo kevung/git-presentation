@@ -185,7 +185,7 @@
                 \column{0.5\linewidth}
                 \begin{block}{Cr\'eer une branche}
                         \centering
-                        git branch ma-branche
+                        git branch \emph{ma-nouvelle-branche}
                 \end{block}
         \end{columns}
 \end{frame}
@@ -246,7 +246,7 @@
         \begin{columns}
                 \column{.6\linewidth}
                 \begin{block}{Fusionner dans la branche courante}
-                        git merge iss53
+                        git merge \emph{iss53}
                 \end{block}
         \end{columns}
         \vspace{-5mm}
@@ -304,7 +304,7 @@
         \centering
         \includegraphics[width=\linewidth,height=0.8\textheight,keepaspectratio]{./img/centralized_workflow}
         \begin{block}{Cr\'eer un d\'ep\^ot vierge}
-                git init --bare mon-depot.git
+                git init --bare \emph{mon-depot.git}
         \end{block}
 \end{frame}
 
@@ -313,13 +313,13 @@
 \begin{frame}
         \frametitle{Trois commandes}
         \begin{block}{Ajouter l'adresse d'un d\'ep\^ot distant}
-                git remote add mon-depot adresse-de-mon-depot
+                git remote add \emph{mon-depot} \emph{adresse-de-mon-depot}
         \end{block}
         \begin{block}{Pousser sur un d\'ep\^ot distant}
-                git push mon-depot branche-sur-mon-depot
+                git push \emph{mon-depot} \emph{branche-sur-mon-depot}
         \end{block}
         \begin{block}{Tirer sur un d\'ep\^ot distant}
-                git pull mon-depot branche-sur-mon-depot
+                git pull \emph{mon-depot} \emph{branche-sur-mon-depot}
         \end{block}
 \end{frame}
 
@@ -336,15 +336,15 @@
 \begin{frame}
         \frametitle{Configuration initiale}
         \begin{block}{Identit\'e}
-                git config --global user.name "Augustin Fresnel"
+                git config --global user.name "\emph{Augustin Fresnel}"
         \end{block}
         
         \begin{block}{Email}
-                git config --global user.email "augustin.fresnel@fresnel.fr"
+                git config --global user.email "\emph{augustin.fresnel@fresnel.fr}"
         \end{block}
 
         \begin{block}{Editeur}
-                git config --global core.editor emacs
+                git config --global core.editor \emph{emacs}
         \end{block}
 \end{frame}
 
@@ -356,19 +356,19 @@
                 \column{0.6\linewidth}
 
                 \begin{block}{checkout -> co}
-                        git config --global alias.co checkout
+                        git config --global alias.\emph{co} checkout
                 \end{block}
 
                 \begin{block}{branch -> br}
-                        git config --global alias.br branch
+                        git config --global alias.\emph{br} branch
                 \end{block}
 
                 \begin{block}{status -> st}
-                        git config --global alias.st status
+                        git config --global alias.\emph{st} status
                 \end{block}
 
                 \begin{block}{commit -> ci}
-                        git config --global alias.ci commit
+                        git config --global alias.\emph{ci} commit
                 \end{block}
 
         \end{columns}
